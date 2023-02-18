@@ -9,7 +9,7 @@ module.exports = {
   permissions: ['SendMessages'],
   owner: false,
   run: async (client, message, args, prefix, config, db) => {
-
+    console.log(`${message.author.tag}`.yellow + ` ran ${prefix}info.`.green);
     if (!args[0]) return message.reply({
       embeds: [
         new EmbedBuilder()
@@ -17,9 +17,7 @@ module.exports = {
           .setColor("Red")
       ]
     });
-
     const command = client.prefix_commands.get(args[0].toLowerCase());
-
     if (!command) return message.reply({
       embeds: [
         new EmbedBuilder()
@@ -27,7 +25,6 @@ module.exports = {
           .setColor("Red")
       ]
     });
-
     return message.reply({
       embeds: [
         new EmbedBuilder()
@@ -41,6 +38,5 @@ module.exports = {
           .setColor("Blue")
       ]
     });
-    
   },
 };

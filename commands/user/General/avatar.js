@@ -1,12 +1,9 @@
 const { EmbedBuilder } = require('discord.js');
-
 module.exports = {
     name: "Avatar",
     type: 2,
     run: async (client, interaction, config, db) => {
-
         const user = interaction.guild.members.cache.get(interaction.targetId);
-
         // Finals:
         return interaction.reply(
             {
@@ -22,6 +19,5 @@ module.exports = {
                 ephemeral: true
             }
         );
-
     },
 };

@@ -1,5 +1,4 @@
 const { EmbedBuilder, ModalBuilder, TextInputBuilder, TextInputStyle, ActionRowBuilder } = require("discord.js");
-
 module.exports = {
     name: "mymodal",
     description: "Replies with a modal menu!",
@@ -12,16 +11,12 @@ module.exports = {
         const modal = new ModalBuilder()
             .setCustomId('myModal')
             .setTitle('My Modal');
-
         const something = new TextInputBuilder()
             .setCustomId('something')
             .setLabel("Type anything here")
             .setStyle(TextInputStyle.Short);
-
         const ActionRow = new ActionRowBuilder().addComponents(something);
-
         modal.addComponents(ActionRow);
-
         await interaction.showModal(modal);
     },
 };

@@ -1,8 +1,6 @@
 const { Client, Partials, Collection, GatewayIntentBits } = require('discord.js');
 const config = require('./config/config');
 const colors = require("colors");
-
-// Prints information about the bot
 console.log(" ");
 console.log(" ");
 console.log(" ");

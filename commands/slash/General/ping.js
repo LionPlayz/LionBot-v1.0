@@ -1,8 +1,7 @@
 const { EmbedBuilder } = require("discord.js");
-
 module.exports = {
     name: "ping",
-    description: "Replies with pong!",
+    description: "Replies with the bot's ping!",
     type: 1,
     options: [],
     permissions: {

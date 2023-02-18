@@ -1,6 +1,5 @@
 const { EmbedBuilder } = require("discord.js");
 const fs = require('fs');
-
 module.exports = {
   config: {
     name: "help",
@@ -9,8 +8,8 @@ module.exports = {
   permissions: ['SendMessages'],
   owner: false,
   run: async (client, message, args, prefix) => {
+    console.log(`${message.author.tag}`.yellow + ` ran ${prefix}help.`.green);
     const commands = client.prefix_commands.map(command => `${prefix}${command.config.name}`);
-
     return message.reply(
       {
         embeds: [
@@ -35,6 +34,5 @@ module.exports = {
         ]
       }
     );
-
   },
 };
