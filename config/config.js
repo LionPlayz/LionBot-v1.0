@@ -8,7 +8,7 @@ module.exports = {
   },
   Client: {
     TOKEN: "",
-    ID: "961319516707643412"
+    ID: "1076529382149079170"
   },
   BotInfo: {
     Version: "1.0.0",

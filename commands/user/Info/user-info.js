@@ -1,6 +1,5 @@
 const { EmbedBuilder, PermissionsBitField } = require('discord.js');
 const moment = require('moment');
-
 module.exports = {
     name: "User Info",
     type: 2,
